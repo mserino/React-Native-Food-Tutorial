@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { Text, StyleSheet, ScrollView } from 'react-native';
 
 import SearchBar from '../components/SearchBar';
 import ResultsList from '../components/ResultsList';
@@ -24,8 +24,6 @@ const SearchScreen = () => {
       />
 
       {errorMessage ? <Text>{errorMessage}</Text> : null}
-
-      <Text style={styles.text}>We have found {results.length} results</Text>
 
       <ScrollView>
         <ResultsList
